@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/lib/Container';
 import Button from 'react-bootstrap/lib/Button';
 import fruit from '.././images/vegan-pizza.jpg'
 import Header from './Header.js'
+import Image from 'react-bootstrap/lib/Image';
 
 export default class Home extends Component {
   render() {
@@ -16,7 +17,7 @@ export default class Home extends Component {
             buttonName="TAKE THE QUIZ"/>
             <Jumbotron style={{display: 'flex', marginBottom: '0', alignItems: 'center'}}>
                 <Container>
-                    <img src={fruit} alt="fruit" style={{width:'100%', overflow: 'hidden'}}/>
+                    <Image src={fruit} alt="fruit" style={{width:'100%', overflow: 'hidden'}} thumbnail/>
                     
                 </Container>
                 <Container>
@@ -40,8 +41,8 @@ export default class Home extends Component {
                     </Container> 
                     <Container>
                     <h4>NUTRITION HELP</h4>
-                    <p><a href="https://studentaffairs.duke.edu/studenthealth/nutrition/nutrition-resources-information" target="_blank">Nutrition Resources &amp; Information</a></p>
-                    <p><a href="https://studentaffairs.duke.edu/studenthealth/nutrition-services" target="_blank">Nutrition Services</a></p>
+                    <p><a rel="noopener noreferrer" href="https://studentaffairs.duke.edu/studenthealth/nutrition/nutrition-resources-information" target="_blank">Nutrition Resources &amp; Information</a></p>
+                    <p><a rel="noopener noreferrer" href="https://studentaffairs.duke.edu/studenthealth/nutrition-services" target="_blank">Nutrition Services</a></p>
                     </Container>  
                 </Container>
             </Jumbotron>

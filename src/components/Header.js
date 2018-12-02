@@ -12,7 +12,7 @@ export default class Header extends Component {
                 <Container>
                     <h3 style={{color:'white'}}>{smallTitle}</h3>
                     <h1 style={{fontFamily: "Arial Black", fontSize: "7em"}}>{largeTitle}</h1>
-                    {buttonName != "" ? <Button>{buttonName}</Button> : null}
+                    {buttonName !== "" ? <Button>{buttonName}</Button> : null}
                 </Container>
             </Jumbotron>
         </div>
