@@ -13,8 +13,7 @@ export default class Home extends Component {
             <Header
             backgroundColor="deepskyblue"
             smallTitle="ARE YOU"
-            largeTitle="EATING HEALTHY?"
-            buttonName="TAKE THE QUIZ"/>
+            largeTitle="EATING HEALTHY?"/>
             <Jumbotron style={{display: 'flex', marginBottom: '0', alignItems: 'center'}}>
                 <Container>
                     <Image src={fruit} alt="fruit" style={{width:'100%', overflow: 'hidden'}} thumbnail/>
