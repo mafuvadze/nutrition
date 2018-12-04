@@ -15,7 +15,6 @@ export default class NavBar extends Component {
           <Nav.Link href="#features"><Link to='/quiz/variety'>Variety Quiz</Link></Nav.Link>
           <Nav.Link href="#features"><Link to='/quiz/moderate'>Moderation Quiz</Link></Nav.Link>
           <Nav.Link href="#features"><Link to='/quiz/adequate'>Adequacy Quiz</Link></Nav.Link>
-            <Nav.Link href="#pricing">Healthful Eating</Nav.Link>
             </Nav>
         </Navbar>
     );
