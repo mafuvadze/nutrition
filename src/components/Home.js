@@ -7,13 +7,26 @@ import Header from './Header.js'
 import Image from 'react-bootstrap/lib/Image';
 
 export default class Home extends Component {
+    constructor(props) {
+        super(props)
+        this.myRef = React.createRef();
+    }
+
+    scrollToMyRef = () => {
+        window.scrollTo({
+            top:this.myRef.current.offsetTop, 
+            behavior: "smooth"
+        })
+    }
+    
   render() {
     return (
         <div>
             <Header
             backgroundColor="deepskyblue"
             smallTitle="ARE YOU"
-            largeTitle="EATING HEALTHY?"/>
+            largeTitle="EATING HEALTHY?"
+            buttonName=""/>
             <Jumbotron style={{display: 'flex', marginBottom: '0', alignItems: 'center'}}>
                 <Container>
                     <Image src={fruit} alt="fruit" style={{width:'100%', overflow: 'hidden'}} thumbnail/>
@@ -22,12 +35,12 @@ export default class Home extends Component {
                 <Container>
                     <h3>PARTS OF A HEALTHFUL DIET</h3>
                     <h4>4 Simple Steps</h4>
-                    <p>Ever wonder what it takes to follow a healthy diet? While there are numerous aspects to maintaining one, incorporating a diet that is balanced, moderate, varied, and adequate is a good start!</p>
-                    <Button>LEARN MORE</Button>
+                    <p style={{padding: "0 50px"}}>Ever wonder what it takes to follow a healthy diet? While there are numerous aspects to maintaining one, incorporating a diet that is balanced, moderate, varied, and adequate is a good start!</p>
+                    {/* <Button>LEARN MORE</Button> */}
                 </Container>
             </Jumbotron>
             <Jumbotron style={{marginBottom: '0'}}>
-                <Container style={{display: 'flex'}}>
+                <Container style={{display: 'flex', border: '3px white solid', padding: '20px 0px'}}>
                     <Container>
                     <h4>STUDENTS</h4>
                     <p>Anngelyque Stevenson</p>

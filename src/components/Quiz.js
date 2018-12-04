@@ -11,7 +11,7 @@ export default class Quiz extends Component {
         <div>
             <Header
             backgroundColor="gold"
-            smallTitle="TAKE THE"
+            smallTitle="TAKE A"
             largeTitle="QUIZ"
             buttonName=""/>
             <Container style={{marginTop: '20px'}}><h3>CHOOSE A CATEGORY</h3></Container>
