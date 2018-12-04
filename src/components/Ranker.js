@@ -71,10 +71,10 @@ shuffle = (a) => {
             <div>
                 <NavBar/>
                 <div style={{ backgroundColor: '#0080ff' }}>
-                    <Header size='huge' style={{ display: 'flex', justifyContent: 'center', margin: "36px", color: 'white' }}>
+                    <Header size='huge' style={{ display: 'flex', justifyContent: 'center', padding: "36px", color: 'white' }}>
                         {title}
                     </Header>
-                    {this.state.correct != null && <Header style={{ display: 'flex', justifyContent: 'center', margin: "36px", color: 'white'}} >{this.state.correct} is the answer</Header>}
+                    {/* {this.state.correct != null && <Header style={{ display: 'flex', justifyContent: 'center', margin: "36px", color: 'white'}} >{this.state.correct} is the answer</Header>} */}
                     <div style={{ display: 'flex', justifyContent: 'center', marginBottom: "24px" }}>
                         <Question
                             correct={this.state.correct == null ? null : this.state.correct === foods.foods[randVersus[0]].name}
@@ -102,7 +102,8 @@ shuffle = (a) => {
                             image={foods.foods[randVersus[1]].image}
                         />
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '100px' }}>
+                    <div> {this.state.correct != null && <Header style={{ display: 'flex', justifyContent: 'center', margin: "36px", color: 'white'}} >{this.state.correct} is the answer</Header>}</div>
+                    <div style={{ display: 'flex', justifyContent: 'center', padding: '20px 0' }}>
                         {this.state.answerChosen && <Button onClick={() => { this.handleCheckAnswer(topicSet)}} positive>Check Answer</Button>}
                         {this.state.done && <Button content='Done'><Link to='/home'>Done</Link></Button>}
                         {(!this.state.done && this.state.answerChecked) && <Button

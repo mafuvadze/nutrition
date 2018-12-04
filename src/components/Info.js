@@ -30,7 +30,7 @@ export default class Info extends Component {
             smallTitle="LEARN ABOUT A"
             largeTitle="HEALTHFUL DIET"
             buttonName=""/>
-            <Jumbotron style={{display: 'flex'}}>
+            <Jumbotron style={{display: 'flex', marginBottom: '0'}}>
                 <Container>
                 <Tabs style={{justifyContent: 'center', marginTop: '10px'}} defaultActiveKey="balanced" id="uncontrolled-tab-example">
                         <Tab eventKey="balanced" title="BALANCED">

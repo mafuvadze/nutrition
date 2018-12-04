@@ -14,13 +14,15 @@ export default class Quiz extends Component {
             smallTitle="TAKE A"
             largeTitle="QUIZ"
             buttonName=""/>
-            <Container style={{marginTop: '20px'}}><h3>CHOOSE A CATEGORY</h3></Container>
-            <Container>
-                <Button style={{ height: '9em', width: '9em', margin: '10px' }} variant="outline-warning" ><Link to='/quiz/balance'>Balanced Quiz</Link></Button>
-                <Button style={{ height: '9em', width: '9em', margin: '10px' }} variant="outline-warning" ><Link to='/quiz/moderate'>Moderate Quiz</Link></Button>
-                <Button style={{ height: '9em', width: '9em', margin: '10px' }} variant="outline-warning" ><Link to='/quiz/variety'>Varied Quiz</Link></Button>
-                <Button style={{ height: '9em', width: '9em', margin: '10px' }} variant="outline-warning" ><Link to='/quiz/adequate'>Adequacy Quiz</Link></Button>
-            </Container>
+            <div style={{marginBottom: '50px'}}>
+                <Container style={{marginTop: '50px'}}><h3>CHOOSE A CATEGORY</h3></Container>
+                <Container>
+                    <Button style={{ height: '9em', width: '9em', margin: '10px' }} variant="outline-warning" ><Link to='/quiz/balance'>Balanced Quiz</Link></Button>
+                    <Button style={{ height: '9em', width: '9em', margin: '10px' }} variant="outline-warning" ><Link to='/quiz/moderate'>Moderate Quiz</Link></Button>
+                    <Button style={{ height: '9em', width: '9em', margin: '10px' }} variant="outline-warning" ><Link to='/quiz/variety'>Varied Quiz</Link></Button>
+                    <Button style={{ height: '9em', width: '9em', margin: '10px' }} variant="outline-warning" ><Link to='/quiz/adequate'>Adequacy Quiz</Link></Button>
+                </Container>
+            </div>
         </div>
     );
   }
